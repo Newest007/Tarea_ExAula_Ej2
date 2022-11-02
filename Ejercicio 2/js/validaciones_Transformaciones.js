@@ -2,6 +2,8 @@
 /* Sección de validaciones */
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
+const btnConvertir = document.getElementById("btn-convertir");
+btnConvertir.hidden = true;
 
 const expresiones = {
     importe: /^[0-9]+$/
@@ -27,6 +29,7 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo_${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.remove('formulario_input-error-activo');
 		campos[campo] = true;
+        btnConvertir.hidden = false;
     } else {
 		document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-incorrecto');
 		document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-correcto');
@@ -34,6 +37,7 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo_${campo} i`).classList.remove('fa-check-circle');
 		document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.add('formulario_input-error-activo');
 		campos[campo] = false;
+        btnConvertir.hidden = true;
 	}
 }
 
@@ -43,3 +47,5 @@ inputs.forEach((input) => {
 });
 
 /* Sección de transformaciones */
+
+
