@@ -11,8 +11,8 @@ const containerTabla = document.getElementById("containerTabla");
 //Accedemos a los botones mediante la API DOM
 const btnConvertir = document.getElementById("btnConvertir");
 
-let selectOrigen = document.getElementById("selectOrigen").value;
-let selectFinal = document.getElementById("selectFinal").value;
+let selectOrigen = document.getElementById("selectOrigen").value.toString();
+let selectFinal = document.getElementById("selectFinal").value.toString();
 
 //Agregamos el evento al respectivo boton
 btnConvertir.addEventListener("click", addDivisa);
