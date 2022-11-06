@@ -11,8 +11,8 @@ const containerTabla = document.getElementById("containerTabla");
 //Accedemos a los botones mediante la API DOM
 const btnConvertir = document.getElementById("btnConvertir");
 
-let selectOrigen = document.getElementById("selectOrigen").value.toString();
-let selectFinal = document.getElementById("selectFinal").value.toString();
+let selectOrigen = document.getElementById("selectOrigen").value;
+let selectFinal = document.getElementById("selectFinal").value;
 
 //Agregamos el evento al respectivo boton
 btnConvertir.addEventListener("click", addDivisa);
@@ -42,6 +42,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar Estadounidense");
         arrayMonedaFinal.push("Colón Salvadoreños");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "3") {
@@ -50,6 +51,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Libra Esterlina");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "4") {
@@ -58,6 +60,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Dolar Canadiense");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "5") {
@@ -66,6 +69,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Franco Suizo");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "6") {
@@ -74,6 +78,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Dolar Australiano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "7") {
@@ -82,6 +87,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Dolar Singapurense");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "8") {
@@ -90,6 +96,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Peso Colombiano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "9") {
@@ -98,6 +105,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Won Surcoreano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "10") {
@@ -106,6 +114,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Real Brasileño");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "11") {
@@ -114,6 +123,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Rupia India");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "0" && selectFinal == "12") {
@@ -122,6 +132,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Dolar");
         arrayMonedaFinal.push("Quetzal Guatemalteco");
+        alert(`El valor es:` + valorFinal);
     }
 
 
@@ -133,6 +144,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Dolar Estadounidense");
+        alert(`El valor es:` + valorFinal);
     }
     
     if (selectOrigen == "1" && selectFinal == "2") {
@@ -141,6 +153,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Colón Salvadoreños");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "3") {
@@ -149,6 +162,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Libra Esterlina");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "4") {
@@ -157,6 +171,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Dolar Canadiense");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "5") {
@@ -165,6 +180,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Franco Suizo");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "6") {
@@ -173,6 +189,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Dolar Australiano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "7") {
@@ -181,6 +198,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Dolar Singapurense");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "8") {
@@ -189,6 +207,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Peso Colombiano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "9") {
@@ -197,6 +216,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Won Surcoreano");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "10") {
@@ -205,6 +225,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Real Brasileño");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "11") {
@@ -213,6 +234,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Rupia India");
+        alert(`El valor es:` + valorFinal);
     }
 
     if (selectOrigen == "1" && selectFinal == "12") {
@@ -221,6 +243,7 @@ function addDivisa(){
         arrayDivisaOrigen.push(valorOrigen);
         arrayMonedaOrigen.push("Peso Mexicano");
         arrayMonedaFinal.push("Quetzal Guatemalteco");
+        alert(`El valor es:` + valorFinal);
     }
 
 
