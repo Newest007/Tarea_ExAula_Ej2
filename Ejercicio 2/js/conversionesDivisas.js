@@ -17,6 +17,8 @@ let selectFinal = document.getElementById("selectFinal");
 //Agregamos el evento al respectivo boton
 btnConvertir.addEventListener("click", addDivisa);
 
+
+
 //Codificamos el evento antes colocado
 function addDivisa(){
 
@@ -24,6 +26,8 @@ function addDivisa(){
     let valorFinal;
     
     //Realizamos las diversas convinaciones de divisas
+
+    if(valorOrigen > 0){
 
     //Moneda origen DOLAR ESTADOUNIDENSE
     if (selectOrigen.value == "0" && selectFinal.value == "1") {
@@ -1573,9 +1577,15 @@ function addDivisa(){
         arrayMonedaFinal.push("Rupia India");
                 alert(`El valor es: ` + valorFinal.toFixed(2));
 
+    } 
+
+    mostrarHistorial();
+
+    } else {
+        alert("No se permiten valoren negativos, nulos o cero");
     }
 
-    mostrarHistorial(); //Función que muestra los resultados guardados
+    //mostrarHistorial(); //Función que muestra los resultados guardados
 }
 
 function mostrarHistorial(){
@@ -1623,6 +1633,6 @@ function mostrarHistorial(){
 
         containerTabla.innerHTML = table
     } else {
-        alert("No se han hecho ninguna conversión")
+        
     }
 }
