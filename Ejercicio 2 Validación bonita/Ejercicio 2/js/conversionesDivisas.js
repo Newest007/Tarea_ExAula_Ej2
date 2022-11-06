@@ -20,7 +20,7 @@ const inputs = document.querySelectorAll('#formulario input');
 btnConvertir.hidden = true;
 
 const expresiones = {
-    importe: /^[1-9]+$/
+    importe: /^[1-9][0-9]*$/
 }
 
 const campos = {
