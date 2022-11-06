@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de Divisas</title>
+    <link rel="stylesheet" href="../css/card_main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/conver.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="../js/conversionesDivisas.js" defer></script>
+  </head>
+
+  <body> 
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">              
+                <li class="nav-item">
+                  
+                  <a class="navbar-brand" href="../index.html"><img src="../img/logo_universidaddonbosco_dark.png" style="width: 40px; height: 50px;"></a>
+                </li>              
+              </ul>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div class="container-flex px-20" style="background-color: #212529; color: white;">
+      <div class="col-sm text-center">
+        <div class="row p-4">
+          <h2>Calculadora de Divisas</h2>
+          <p>Sitio Web en el cual puedes calcular y/o transformar cualquier divisa</p>            
+        </div>
+      </div>
+    </div>
+      
+    <div style="padding:30px;"></div>
+
+    <main>
+
+        <div class="container-xxl p-30 rounded-4" style="background-color: white;">
+          
+            <div class="row">
+              <!--
+              <form action="" class="formulario p-5" id="formulario" style="font-size: 25px;">
+                <div class="input-group mb-3">
+                  <div class="col-4">
+                    <label for="inputValorO" class="form-label">Ingresa la cantidad a transformar</label>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" class="form-control " id="inputValorBase" min="1" onKeypress="if (event.keyCode < 46 || event.keyCode > 57) event.returnValue = false;"
+                    
+                    >
+                  </div>
+                </div>-->
+
+                <form action="" class="formulario" id="formulario">
+                  <div class="formulario_grupo" id="grupo_importe">
+                      <label for="importe" class="formulario_label">Ingrese la cantidad a transformar</label>
+                      <div class="formulario_grupo-input">
+                        <input type="number" class="formulario_input" id="inputValorBase" min="1" name="importe" id="importe">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                      </div>
+                    <p class="formulario_input-error">No se permiten valores negativos, nulos o cero</p>
+                  </div>
+                </form>
+              
+                <!-- Interfaz para elegir la moneda -->
+                <div class="input-group mb-3">
+                  <div class="col-5">
+                    <label for="selectOrigen" class="form-label" >Escoge la moneda que quieres convertir</label>
+                  </div>
+                  <div class="col-6">
+                    <select name="selectOrigen" id="selectOrigen" class="form-select form-select-lg mb3">
+                      <option value="0">Dolar Estadounidense</option>
+                      <option value="1">Peso Mexicano</option>
+                      <option value="2">Colón Salvadoreño</option>
+                      <option value="3">Libra Esterlina</option>
+                      <option value="4">Dolar Canadiense</option>
+                      <option value="5">Franco Suizo</option>
+                      <option value="6">Dolar Australiano</option>
+                      <option value="7">Dolar de Singapur</option>
+                      <option value="8">Peso Colombiano</option>
+                      <option value="9">Won Surcoreano</option>
+                      <option value="10">Real Brasileño</option>
+                      <option value="11">Rupia India</option>
+                      <option value="12">Quetzal Guatemalteco</option>
+                    </select>
+                  </div>
+                </div>
+              
+              
+                <!-- Interfaz para escoger la moneda a la que se convertirá-->
+                <div class="input-group mb-3">
+                  <div class="col-5">
+                    <label for="selectFinal" class="form-label" >Escoge la moneda a la que quieres que se convierta</label>
+                  </div>
+                  <div class="col-6">
+                    <select name="selectMonedaOrigen" id="selectFinal" class="form-select form-select-lg mb3">
+                      <option value="0">Dolar Estadounidense</option>
+                      <option value="1" selected>Peso Mexicano</option>
+                      <option value="2">Colón Salvadoreño</option>
+                      <option value="3">Libra Esterlina</option>
+                      <option value="4">Dolar Canadiense</option>
+                      <option value="5">Franco Suizo</option>
+                      <option value="6">Dolar Australiano</option>
+                      <option value="7">Dolar de Singapur</option>
+                      <option value="8">Peso Colombiano</option>
+                      <option value="9">Won Surcoreano</option>
+                      <option value="10">Real Brasileño</option>
+                      <option value="11">Rupia India</option>
+                      <option value="12">Quetzal Guatemalteco</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="d-grid gap-2 ">
+                    <button class="btn btn-primary btn-lg" type="button"  id="btnConvertir">Convertir</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="container" id="containerResultado">
+
+                  </div>
+                </div>
+                <hr>
+
+                <!-- Container donde irán los registros de las conversiones-->
+
+                <div class="container" id="containerTabla">
+                  
+                </div>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <div style="padding-bottom: 20%;"></div>
+        <footer>
+          <div class="footer-content">
+              <h3>Calculadora de Divisas</h3>
+              <p>Sitio Web en el cual puedes calcular y/o transformar cualquier divisa</p>            
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy; <a href="#">Chief Developer</a>  </p>
+                      <div class="footer-menu">
+                        <ul class="f-menu">
+                          <li><a href="../index.html">Inicio</a></li>
+                          <li><a href="../Pages/integrantes.html">Conocemos</a></li>
+                          <li><a href="../Pages/integrantes.html">Desarroladores</a></li>
+                          <li><a href="../Pages/funcionamiento.html">¿Como Funciona?</a></li>
+                        </ul>
+                      </div>
+          </div>
+  
+      </footer>
+               
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
+        <!--Se comento, ya que no deja tomar valores del formulario -->
+        <!--<script src="../js/validaciones_Transformaciones.js"></script>-->
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+  </body>
+  
+</html>
