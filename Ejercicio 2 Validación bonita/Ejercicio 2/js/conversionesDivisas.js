@@ -1642,7 +1642,7 @@ function mostrarHistorial(){
         table += "<th scope='col'>#</th>";
         table += "<th scope='col'>Valor</th>";
         table += "<th scope='col'>Moneda Origen</th>";
-        table += "<th scope='col'>Converción</th>";
+        table += "<th scope='col'>Conversión</th>";
         table += "<th scope='col'>Moneda Convertida</th>";
         table += "</tr>";
         table += "</thead>";
